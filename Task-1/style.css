@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+  }
+  .navigation_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation_content ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0 15px 0 15px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .navigation_content li:hover {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: 0.25s ease-in-out;
+  }
+  .navigation_logo img {
+    width: 59px;
+    height: 59px;
+    margin: 5px;
+  }
+  .header {
+    background-image: url(images/home_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+  .intro,
+  .tagline,
+  .about_container,
+  .skills,
+  hr,
+  .projects_container,
+  .contact_container,
+  .resume_container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .intro {
+    color: white;
+    padding-top: 125px;
+    padding-left: 16px;
+  }
+  .intro h1 {
+    font-size: 32px;
+  }
+  .intro h2 {
+    font-size: 62px;
+  }
+  .intro h3 {
+    font-size: 99px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: blanchedalmond;
+  }
+  .tagline {
+    bottom: 0;
+    padding: 100px;
+    margin: 100px;
+  }
+  .tagline h1 {
+    font-size: 42px;
+    font-style: oblique;
+    color: grey;
+  }
+  .about > h2 {
+    text-align: center;
+  }
+  .about h2,
+  .skills h3,
+  .projects_content h3,
+  .contact h3,
+  .resume h3 {
+    font-size: 62px;
+  }
+  .about {
+    color: white;
+    background-image: url(./images/about_background.jpg);
+  }
+  .about_container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-content: center;
+  }
+  .topics {
+    color: red;
+  }
+  .about,
+  .projects_container {
+    padding-top: 100px;
+  }
+  .about_content {
+    max-width: 700px;
+    padding-top: 20px;
+    line-height: 1.4;
+  }
+  .about_content,
+  p.skills,
+  .projects,
+  .contact,
+  .resume {
+    font-size: 20px;
+  }
+  .about_img img {
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+  }
+  .projects {
+    color: white;
+    background-image: url(./images/about_background.jpg);
+  }
+  .projects_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 90vh;
+  }
+  .skills ul {
+    list-style-type: disc;
+  }
+  .projects_content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .resume {
+    color: white;
+    background-image: url(./images/about_background.jpg);
+  }
+  .resume_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    background-image: url(./images/resume-photo-2-840x430.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .resume h3 {
+    color: green;
+  }
+  .resume p {
+    color: red;
+  }
+  .file {
+    padding-top: 20px;
+  }
+  .contact {
+    padding: 50px;
+    color: white;
+    background-image: url(./images/about_background.jpg);
+  }
+  .contact_container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .about,
+  .resume,
+  .contact {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+  }
+  
