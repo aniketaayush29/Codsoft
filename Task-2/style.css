@@ -1,4 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(225, 223, 223);
+}
+h1,h2,h3,h4,h5,h6,input,li,textarea,label,select,option,a,button{
+    font-family: "Open Sans", sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+button{
+    background-color:rgb(35, 122, 122) ;
+    padding: 0.8rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    border: 1.5px solid rgb(108, 212, 155) ;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+}
+button:hover{
+    color:rgb(108, 212, 155);
+    background-color: transparent;   
+}
+.section-title{
+    text-transform: uppercase;
+    color: rgb(35, 122, 122);
+    padding: 1rem 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;  
+    width: 100%;
+    padding: 1rem 3rem 16px 3rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+nav img{
+    width: 59px;
+    height: 59px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    list-style-type:none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.15 ease-in-out;
+}
+nav a:visited{
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: rgb(108, 212, 155);
+}
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(./img/background.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    gap: 1rem;
+}
+.home h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+.home p{
+    max-width: 50%; 
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.intro-content .text{
+    width: 40%;
+    flex-shrink: 0;
+}
+.intro-content .text h3{
+    font-size:2rem;
+}
+.intro-content .text p{
+    color: rgb(78, 77, 77);
+}
+.intro-content .image_container{
+    width: 60%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.intro-content img{
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+.intro-content img:hover{
+    transform: scale(1.2);
+}
+.intro-skills{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
 }
